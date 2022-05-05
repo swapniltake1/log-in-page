@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+    <style>
+        
+        .Signup{
+            background-color: aquamarine;
+            box-shadow: 0px 10px 10px 0px red;
+            width: 50%;
+            height: 100%;
+        }
+        .form{
+            background-color: beige;
+        }
+        #btn1:hover{
+            background-color: blueviolet;
+            color: white;
+        }
+        #btn2:hover{
+            background-color: blueviolet;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <center>
+    <h2> <mark>Sign Up Form </mark> </h2>
+    <form action="index.html" method="post" enctype="multipart/form-data" class="form">
+        <fieldset class="Signup">
+            <legend style="background-color: rgb(236, 125, 125);"> Signup Information </legend>
+            <label > Name    </label> 
+            <input type="text"> <br> <br>
+            <label >Email</label>
+            <input type="email"> <br> <br>
+            <label >Phone</label>
+            <input type="number" name="" id=""> <br> <br>
+            <label >Address</label>
+            <textarea>  </textarea> <br> <br>
+            <label >Gender</label> 
+            <input type="radio"> Male 
+            <input type="radio"> Female
+            <input type="radio"> Other <br> <br>
+
+            <label >Date Of Birth </label>
+            <input type="date"> <br> <br>
+
+            <label > Photo </label>
+            <input type="file"> <br> <br>
+
+            <label > Class</label>
+            <select name="" id="">
+                <option value="">Choose</option>
+                <option value=""> SE </option>
+                <option value=""> TE </option>
+                <option value=""> BE </option>
+            </select> <br> <br>
+
+            <label > Division </label>
+            <select name="" id="">
+                <option value="">Choose</option>
+                <option value=""> A </option>
+                <option value=""> B </option>
+                <option value=""> C </option>
+            </select> <br> <br>
+            <label for="loginId"> Create User Id </label>
+            <input type="text"> <br> <br>
+            <label for="Pwd"> Choose Password </label>
+            <input type="password"> <br> <br>
+            <label for="Pwd"> Enter Password </label>
+            <input type="password"> <br> <br>
+           <button type="reset" style="background-color: red;" id="btn1"> Reset </button> 
+           <button type="submit" style="background-color: green;" id="btn2"> Sign Up </button>
+
+        </fieldset>
+
+    </form>
+</center>
+</body>
+</html>
