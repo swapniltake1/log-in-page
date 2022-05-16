@@ -24,57 +24,61 @@
             background-color: blueviolet;
             color: white;
         }
+        #btn3:hover{
+            background-color: blueviolet;
+            color: white;
        
     </style>
 </head>
 <body>
     <center>
     <h2> <mark>Sign Up Form </mark> </h2>
-    <form action="index.html" method="post" enctype="multipart/form-data" class="form">
+    <form action="loginForm.html" method="post" enctype="multipart/form-data" class="form">
         <fieldset class="Signup">
             <legend style="background-color: rgb(236, 125, 125);"> Signup Information </legend>
             <label > Name    </label> 
-            <input type="text"> <br> <br>
+            <input type="text" name="pname" placeholder="Enter Your Name " autofocus required > <br> <br>
             <label >Email</label>
-            <input type="email"> <br> <br>
+            <input type="email" name="Pmail" placeholder="Enter Your Email " required > <br> <br>
             <label >Phone</label>
-            <input type="number" name="" id=""> <br> <br>
+            <input type="number" name="pno" placeholder="Enter your Phone Number " required > <br> <br>
             <label >Address</label>
-            <textarea>  </textarea> <br> <br>
+            <textarea name="pAddress" placeholder="Enter Your Full Address " required >  </textarea> <br> <br>
             <label >Gender</label> 
-            <input type="radio"> Male 
-            <input type="radio"> Female
-            <input type="radio"> Other <br> <br>
+            <input type="radio" value="male"  > Male 
+            <input type="radio" value="female"> Female
+            <input type="radio" value="others"> Other <br> <br>
 
-            <label >Date Of Birth </label>
-            <input type="date"> <br> <br>
+            <label  > Date Of Birth </label>
+            <input type="date" name="DOB"> <br> <br>
 
-            <label > Photo </label>
-            <input type="file"> <br> <br>
+            <label  > Photo </label>
+            <input type="file" name="photo "> <br> <br>
 
             <label > Class</label>
-            <select name="" id="">
+            <select name="" id="" name="class" >
                 <option value="">Choose</option>
                 <option value=""> SE </option>
-                <option value=""> TE </option>
+                <option value="class" selected > TE </option>
                 <option value=""> BE </option>
             </select> <br> <br>
 
             <label > Division </label>
-            <select name="" id="">
+            <select name="" id="" name="Div" required>
                 <option value="">Choose</option>
                 <option value=""> A </option>
                 <option value=""> B </option>
                 <option value=""> C </option>
             </select> <br> <br>
             <label for="loginId"> Create User Id </label>
-            <input type="text"> <br> <br>
+            <input type="text" required autocomplete="off" name="ID" placeholder="Create Unique Id" minlength="5" maxlength="15"> <br> <br>
             <label for="Pwd"> Choose Password </label>
-            <input type="password"> <br> <br>
-            <label for="Pwd"> Enter Password </label>
-            <input type="password"> <br> <br>
+            <input type="password" required autocomplete="off" name="pwd" placeholder="Enter Your Password Again"> <br> <br>
+            <label for="Pwd" > Enter Password </label>
+            <input type="password" required autocomplete="off" name="pwd1" placeholder="Enter Your Password Again"> <br> <br>
            <button type="reset" style="background-color: red;" id="btn1"> Reset </button> 
            <button type="submit" style="background-color: green;" id="btn2"> Sign Up </button>
+           <button type="submit" style="background-color: rgb(255, 0, 221);" id="btn3" formaction="loginForm.html" > Save </button>
 
         </fieldset>
 
